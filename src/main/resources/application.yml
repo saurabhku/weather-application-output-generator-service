@@ -1,0 +1,21 @@
+weather:
+  service:
+    url: https://api.openweathermap.org/data/2.5/weather?
+    apikey: aa69195559bd4f88d79f9aadeb77a8f6
+kafka:
+  input:
+    topic: weatherdatainputtopic
+  output:
+    topic: weatherdataoutputtopic
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
