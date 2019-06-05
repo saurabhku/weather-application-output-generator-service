@@ -6,7 +6,7 @@ This microservices is responsible for:
 2. Return JSON weather data to caller using Kafka Events.
 
 Prerequisites
-1. To run this service ensure that kafka is running on port 9092
+1. To run this service ensure that kafka is running on port 9092 (https://kafka.apache.org/quickstart)
 2. Create following topics on Kafka before proceeding
    a. weatherdatainputtopic
    b. weatherdataoutputtopic
