@@ -17,5 +17,4 @@ By default, it is made to listen on weatherdatainputtopic.
 can be started by in IDE as spring boot application or as a jar.
 
 Complete system diagram:
-Screenshot:
 ![alt text](https://github.com/saurabhku/weather-application-service/blob/master/images/SeqDiagram.jpg)
