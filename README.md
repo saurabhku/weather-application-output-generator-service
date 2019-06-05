@@ -7,7 +7,7 @@ This microservices is responsible for:
 
 Prerequisites
 1. To run this service ensure that kafka is running on port 9092
-2. We have two topics existing on Kafka
+2. Create following topics on Kafka before proceeding
    a. weatherdatainputtopic
    b. weatherdataoutputtopic
    
